@@ -2,18 +2,18 @@
 
 """
 
-This script browses through git commit history (starting at latest tag), collects all authors of
-commits and creates fragment for `towncrier`_ tool.
+Este comando (''script'') navega através do histórico de implementação (''commit'') git (Começando na última etiqueta), recolhe todos os autores das
+implementações e cria fragmento para `towncrier`_ tool.
 
-It's meant to be run during the release process, before generating the release notes.
+Isto deve ser executado durante o processo de lançamento, antes de gerar as notas de lançamento.
 
-Example::
+Exemplo::
 
     $ python get_authors.py
 
 .. _towncrier: https://github.com/hawkowl/towncrier/
 
-Authors:
+Autores:
     Aurelien Bompard
     Michal Konecny
 """
