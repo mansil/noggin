@@ -1,7 +1,7 @@
 # Noggin
 
-*noggin* is a self-service portal for FreeIPA.
-The primary purpose of the portal is to allow users to sign up and manage their
-account information and group membership.
+*noggin* é um portal de serviço automático para FreeIPA.
+O objetivo principal do portal é permitir que os utilizadores iniciem a sessão
+e controlem a sua própria informação da conta e associação de membro ao group.
 
-The documentation is available online at https://noggin-aaa.readthedocs.io/
+A documentação está disponível ''on-line'' em https://noggin-aaa.readthedocs.io/
