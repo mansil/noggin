@@ -1,26 +1,26 @@
 ============
-Installation
+Instalação
 ============
 
-This covers installation in a development context.
+Isto abrange a instalação num contexto de desenvolvimento.
 
-.. note:: **TODO**: Cover end-user installation here.
+.. nota:: **TODO**: Abrange a instalação do utilizador final aqui.
 
 
-* Use relrod's `containerdev`_ project for development. (Or don't, but at least follow the steps in the Dockerfile to set up your own environment.)
-* Copy your IPA server's ``/etc/ipa/ca.crt`` to ``.containerdev-public/ipa01``
-* Copy ``noggin.cfg.default`` to ``noggin.cfg`` and edit it accordingly. It's in .gitignore, so you are safe to put whatever in it.
+* Utilize `containerdev`_ do projeto relrod para desenvolvimento. (Ou não, mas pelo menos siga estes passos no "Dockerfile" para configurar o seu próprio ambiente.)
+* Copie o seu servidor de IPA ``/etc/ipa/ca.crt`` para ``.containerdev-public/ipa01``
+* Copie ``noggin.cfg.default`` para ``noggin.cfg`` e edite de acordo. Está no .gitignore, e assim, está seguro para colocar lá o que pretender.
 
-  * The ``FREEIPA_ADMIN_USER``/``FREEIPA_ADMIN_PASSWORD`` combination doesn't need to be a full admin user. It just needs to be a user in a role with a privilege that has the following permissions:
+  * A combinação de ``FREEIPA_ADMIN_USER``/``FREEIPA_ADMIN_PASSWORD`` não precisa der um utilizador administrador completo. Este só precisa de ser um utilizador numa função com privilégios que tenha as permissões seguintes:
 
-    * System: Add User to default group
-    * System: Add Users
-    * System: Change User password
-    * System: Read UPG Definition
+    * Sistema: Adicionar Utilizador ao grupo predefinido
+    * Sistema: Adicionar Utilizadores
+    * Sistema: Alterar a palavra-passse do Utilizador
+    * Sistema: Ler a Definição UPG
 
-* Have ``podman`` installed
-* Run ``containerdev-build && containerdev``
-* From inside the container shell, run ``flask run -h0``
-* In your local browser go to http://localhost:5000
+* Ter instalado ``podman``
+* Executar ``containerdev-build && containerdev``
+* De dentro da consola do "container", executar ``flask run -h0``
+* No seu navegador local vá para http://localhost:5000
 
 .. _containerdev: https://github.com/relrod/containerdev
